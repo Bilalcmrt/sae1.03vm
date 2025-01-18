@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Forme et Lieu de la VM </title>
+  <link rel="stylesheet" href="saé1.03vm.css">
+</head>
+
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="saé1.03vm.html"> Accueil </a></li>
+      <li><a href="TypedeVrtualisation.html"> Type de Virtualisation </a></li>
+      <li><a href="Forme&Lieu.html"> Forme et Lieu </a></li>
+      <li><a href="notreVM.html"> Notre VM </a></li>
+      <li><a href="conclusion.html"> Conclusion </a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="context">
+    <h1> Forme et Lieu de la VM </h1>
+    <p>
+      <b> La sauvegarde d'une machine virtuelle (VM) dépend de l'outil de virtualisation
+        utilisé et de la manière dont la machine est configurée. </b>
+    </p>
+    <p>
+      Donc, pour examiner la forme et le lieu de sauvegarde de la machine virtuelle créée,
+      nous devons examiner chaque machine virtuelle pour les environnements
+      VirtualBox, VMWare Workstation, Stratus et UTM.
+    </p>
+  </section>
+
+  <section id="Forme et Lieu de la VirtualBox">
+    <h2> Pour VirtualBox : </h2>
+    <h3> La Forme de sauvegarde : </h3>
+    <p>
+      Les fichiers principaux sont stockés sous forme de fichiers de disque virtuel
+      au format VDI (VirtualBox Disk Image).
+    </p>
+    <p>
+      Les paramètres de la VM (comme la RAM, le réseau) sont enregistrés dans
+      un fichier XML (Extensible Markup Language).
+    </p>
+    <p>
+      Les snapshots sont enregistrés comme des différenciations incrémentales
+      (différences par rapport à l’état initial).
+    </p>
+    <h3> Lieu de sauvegarde : </h3>
+    <p>
+      Par défaut, les VM et leurs disques virtuels sont stockés dans un répertoire
+      défini par l'utilisateur et les snapshots sont sauvegardés dans un sous-dossier
+      de la VM.
+    </p>
+  </section>
+
+  <section id="Forme et Lieu de la VMWare Workstation">
+    <h2> Pour VMWare Workstation : </h2>
+    <h3> La Forme de sauvegarde : </h3>
+    <p>
+      Les fichiers de disque virtuel sont au format VMDK (Virtual Machine Disk).
+    </p>
+    <p>
+      Les paramètres et configurations de la VM sont enregistrés dans un fichier VMX.
+    </p>
+    <p>
+      Les snapshots et clones génèrent des fichiers VMDK différenciés ou complets.
+    </p>
+    <h3> Lieu de sauvegarde : </h3>
+    <p>
+      Les fichiers sont stockés dans un dossier dédié pour chaque VM, défini lors de
+      sa création et les snapshots aussi sont également stockés dans ce dossier,
+      avec des extensions spécifiques pour distinguer les états de la VM.
+    </p>
+  </section>
+
+  <section id="Forme et Lieu de la Stratus">
+    <h2> Pour Stratus : </h2>
+    <h3> La Forme de sauvegarde : </h3>
+    <p>
+      Les environnements Stratus sont orientés vers la haute disponibilité, et les données
+      des VMs sont souvent sauvegardées en temps réel via des copies redondantes.
+    </p>
+    <p>
+      Stratus aussi utilise des images de disques similaires que VirtualBox ou VMWare Workstation.
+    </p>
+    <p>
+      Stratus propose des sauvegardes centralisées via un stockage réseau partagé
+      (NAS (Network Attached Storage)/SAN (Storage Area Network)).
+    </p>
+    <h3> Lieu de sauvegarde : </h3>
+    <p>
+      Le lieu exact dépend de l’architecture choisie (locale ou distante).
+      Les données sont généralement sauvegardées sur des systèmes de stockage haute disponibilité.
+    </p>
+  </section>
+
+  <section id="Forme et Lieu d'UTM">
+    <h2> Pour UTM : </h2>
+    <h3> La Forme de sauvegarde : </h3>
+    <p>
+      UTM repose sur QEMU et utilise des fichiers QCOW2 (QEMU Copy-On-Write) comme
+      format principal pour les disques virtuels.
+    </p>
+    <p>
+      Les configurations de la VM sont enregistrées dans un fichier JSON spécifique.
+    </p>
+    <h3> Lieu de sauvegarde : </h3>
+    <p>
+      Les disques virtuels et configurations sont stockés dans des dossiers définis
+      par l'utilisateur, si la VM utilise un disque externe ou une image ISO,
+      ces fichiers peuvent être situés ailleurs.
+    </p>
+  </section>
+</main>
+
+</body>
+
+<footer>
+  <p> Groupe 104 / TAYLAN & COMERT & SÖBE</p>
+</footer>
+
+</html>
