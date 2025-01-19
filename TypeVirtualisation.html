@@ -1,98 +1,99 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Type de Virtualisation </title>
-  <link rel="stylesheet" href="saé1.03vm.css">
-</head>
 
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Type de Virtualisation </title>
+    <link rel="stylesheet" href="saé1.03vm.css">
+  </head>
 
-<header>
-  <nav>
-    <ul>
-      <li><a href="saé1.03vm.html"> Accueil </a></li>
-      <li><a href="TypedeVrtualisation.html"> Type de Virtualisation </a></li>
-      <li><a href="Forme&Lieu.html"> Forme et Lieu </a></li>
-      <li><a href="notreVM.html"> Notre VM </a></li>
-      <li><a href="conclusion.html"> Conclusion </a></li>
-    </ul>
-  </nav>
-</header>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html"> Accueil </a></li>
+          <li><a href="TypeVirtualisation.html"> Type de Virtualisation </a></li>
+          <li><a href="Forme&Lieu.html"> Forme et Lieu </a></li>
+          <li><a href="notreVM.html"> Notre VM </a></li>
+          <li><a href="conclusion.html"> Conclusion </a></li>
+        </ul>
+      </nav>
+    </header>
 
-<main>
-  <section id="context">
-    <h1> Type de Virtualisation </h1>
-    <p>
-      Donc maintenant, nous allons vous expliquer les <b> types de virtualisation </b>
-      pour les environnements VirtualBox, VMWare Workstation et Stratus. Mais pendant
-      ce projet, on a utilisé UTM comme machine virtuelle, donc on va donner
-      des explications pour cette machine virtuelle aussi.
-    </p>
-  </section>
+    <main>
+      <section id="context">
+        <h1> Type de Virtualisation </h1>
+        <p>
+          Donc maintenant, nous allons vous expliquer les <b> types de virtualisation </b>
+          pour les environnements VirtualBox, VMWare Workstation et Stratus. Mais pendant
+          ce projet, on a utilisé UTM comme machine virtuelle, donc on va donner
+          des explications pour cette machine virtuelle aussi.
+        </p>
+      </section>
 
-  <section id="VirtualBox">
-    <h2> Type de Virtualisation de VirtualBox </h2>
-    <img src="virtualbox.png" alt="VirtualBox" width="350" height="300" >
-    <p>
-      VirtualBox est un outil de virtualisation basé sur un hyperviseur de type 2,
-      conçu pour exécuter des machines virtuelles (VM) sur des systèmes d'exploitation hôtes.
-    </p>
-    <p>
-      Il reproduit complètement un matériel virtuel, permettant d'exécuter n'importe
-      quel OS invité (Windows, Linux, macOS, etc.) et aussi support pour optimiser
-      les performances des OS invités.
-    </p>
-  </section>
+      <section id="VirtualBox">
+        <h2> Type de Virtualisation de VirtualBox </h2>
+        <img src="virtualbox.png" alt="VirtualBox" width="350" height="300" >
+        <p>
+          VirtualBox est un outil de virtualisation basé sur un hyperviseur de type 2,
+          conçu pour exécuter des machines virtuelles (VM) sur des systèmes d'exploitation hôtes.
+        </p>
+        <p>
+          Il reproduit complètement un matériel virtuel, permettant d'exécuter n'importe
+          quel OS invité (Windows, Linux, macOS, etc.) et aussi support pour optimiser
+          les performances des OS invités.
+        </p>
+      </section>
 
-  <section id="VMWare Workstation">
-    <h2> Type de Virtualisation de VMWare Workstation </h2>
-    <img src="vmware_workstation_logo.png" alt="VMWare Workstation" width="450" height="350" >
-    <p>
-      VMware Workstation est également un hyperviseur de type 2, mais avec des fonctionnalités
-      avancées pour les utilisateurs professionnels.
-    </p>
-    <p>
-      VMWare Workstation, aussi comme VirtualBox, il simule entièrement le matériel
-      pour les systèmes d'exploitation invités mais aussi permet l'accélération graphique
-      pour des applications 3D ou des charges plus lourdes. Il permet aussi la création
-      et la gestion d'états multiples d'une VM.
-    </p>
-  </section>
-  <section id="Stratus">
-    <h2> Type de Virtualisation de Stratus </h2>
-    <img src="Stratus_Technologies_Logo.svg" alt="Stratus" width="450" height="300" >
-    <p>
-      Stratus se distingue par son orientation vers des solutions critiques pour
-      l'entreprise et son approche unique en matière de virtualisation et de tolérance
-      aux pannes.
-    </p>
-    <p>
-      Stratus combine la redondance matérielle avec des environnements virtualisés et
-      garantit des performances continues sans temps d’arrêt grâce à une redondance
-      active-active.
-    </p>
-  </section>
-  <section id="UTM">
-    <h2> Type de Virtualisation d'UTM </h2>
-    <img src="UTM.png" alt="UTM" width="300" height="300" >
-    <p>
-      UTM est une solution de virtualisation basée sur QEMU, spécialement conçue pour
-      macOS, compatible avec les architectures Intel et Apple Silicon (ARM).
-    </p>
-    <p>
-      UTM reproduit un matériel totalement différent, comme des architectures ARM sur
-      des systèmes x86 et utilise la virtualisation accélérée par matériel pour exécuter
-      des OS proches (exemple : Linux sur macOS).
-    </p>
-  </section>
-</main>
+        <section id="VMWare Workstation">
+          <h2> Type de Virtualisation de VMWare Workstation </h2>
+          <img src="vmware_workstation_logo.png" alt="VMWare Workstation" width="450" height="350" >
+          <p>
+            VMware Workstation est également un hyperviseur de type 2, mais avec des fonctionnalités
+            avancées pour les utilisateurs professionnels.
+          </p>
+          <p>
+          VMWare Workstation, aussi comme VirtualBox, il simule entièrement le matériel
+          pour les systèmes d'exploitation invités mais aussi permet l'accélération graphique
+          pour des applications 3D ou des charges plus lourdes. Il permet aussi la création
+          et la gestion d'états multiples d'une VM.
+        </p>
+      </section>
 
-</body>
+      <section id="Stratus">
+        <h2> Type de Virtualisation de Stratus </h2>
+        <img src="Stratus_Technologies_Logo.svg" alt="Stratus" width="450" height="300" >
+        <p>
+          Stratus se distingue par son orientation vers des solutions critiques pour
+          l'entreprise et son approche unique en matière de virtualisation et de tolérance
+          aux pannes.
+        </p>
+        <p>
+          Stratus combine la redondance matérielle avec des environnements virtualisés et
+          garantit des performances continues sans temps d’arrêt grâce à une redondance
+          active-active.
+        </p>
+      </section>
 
-<footer>
-  <p> Groupe 104 / TAYLAN & COMERT & SÖBE</p>
-</footer>
+      <section id="UTM">
+        <h2> Type de Virtualisation d'UTM </h2>
+        <img src="UTM.png" alt="UTM" width="300" height="300" >
+        <p>
+          UTM est une solution de virtualisation basée sur QEMU, spécialement conçue pour
+          macOS, compatible avec les architectures Intel et Apple Silicon (ARM).
+        </p>
+        <p>
+          UTM reproduit un matériel totalement différent, comme des architectures ARM sur
+          des systèmes x86 et utilise la virtualisation accélérée par matériel pour exécuter
+          des OS proches (exemple : Linux sur macOS).
+        </p>
+      </section>
+    </main>
+  </body>
+
+  <footer>
+    <p> Groupe 104 / TAYLAN & COMERT & SÖBE</p>
+  </footer>
 
 </html>
