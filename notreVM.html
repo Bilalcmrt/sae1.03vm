@@ -1,528 +1,520 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Notre VM </title>
-  <link rel="stylesheet" href="saé1.03vm.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Notre VM </title>
+    <link rel="stylesheet" href="saé1.03vm.css">
+  </head>
 
-<body>
-<header>
-  <nav>
-    <ul>
-      <li><a href="saé1.03vm.html"> Accueil </a></li>
-      <li><a href="TypedeVrtualisation.html"> Type de Virtualisation </a></li>
-      <li><a href="Forme&Lieu.html"> Forme et Lieu </a></li>
-      <li><a href="notreVM.html"> Notre VM </a></li>
-      <li><a href="conclusion.html"> Conclusion </a></li>
-    </ul>
-  </nav>
-</header>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html"> Accueil </a></li>
+          <li><a href="TypeVirtualisation.html"> Type de Virtualisation </a></li>
+          <li><a href="Forme&Lieu.html"> Forme et Lieu </a></li>
+          <li><a href="notreVM.html"> Notre VM </a></li>
+          <li><a href="conclusion.html"> Conclusion </a></li>
+        </ul>
+      </nav>
+    </header>
 
-<main>
-  <section id="context">
-    <h1> Notre Machine Virtuelle </h1>
-    <p>
-      Pour ce projet, nous avons dû télécharger une machine virtuelle de
-      type Linux sur notre propre ordinateur et effectuer correctement les configurations
-      d'installation. Nous allons maintenant vous expliquer étape par étape comment nous avons
-      procédé avec des captures d'écran.
-    </p>
-    <p>
-      Nous expliquerons également comment nous l'avons fait en montrant les étapes
-      <b> "Création d'un compte administrateur", "Création de deux utilisateurs",
-        "Création d'un groupe" </b> requises pour le projet avec des captures d'écran.
-    </p>
-  </section>
+    <main>
+      <section id="context">
+        <h1> Notre Machine Virtuelle </h1>
+        <p>
+          Pour ce projet, nous avons dû télécharger une machine virtuelle de
+          type Linux sur notre propre ordinateur et effectuer correctement les configurations
+          d'installation. Nous allons maintenant vous expliquer étape par étape comment nous avons
+          procédé avec des captures d'écran.
+        </p>
+        <p>
+          Nous expliquerons également comment nous l'avons fait en montrant les étapes
+          <b> "Création d'un compte administrateur", "Création de deux utilisateurs",
+          "Création d'un groupe" </b> requises pour le projet avec des captures d'écran.
+        </p>
+      </section>
 
-  <section>
-    <h2> Diagramme de Gantt du travail de la période :</h2>
-    <img src="DiagrammedeGantt.png" alt="DdGantt" width="550" height="400" >
-    <p>
-      Bien sûr que pendant la réalisation de cette SAé, nous nous sommes beaucoup entraidés,
-      et nous avons même fait la plupart de nos tâches ensemble. Mais lorsque nous avons
-      préparé le diagramme de Gantt, nous avons placé les tâches principales et montré
-      les principales personnes responsables en face de ces tâches.
-    </p>
-  </section>
+      <section>
+        <h2> Diagramme de Gantt du travail de la période :</h2>
+        <img src="DiagrammedeGantt.png" alt="DdGantt" width="550" height="400" >
+        <p>
+          Bien sûr que pendant la réalisation de cette SAé, nous nous sommes beaucoup entraidés,
+          et nous avons même fait la plupart de nos tâches ensemble. Mais lorsque nous avons
+          préparé le diagramme de Gantt, nous avons placé les tâches principales et montré
+          les principales personnes responsables en face de ces tâches.
+        </p>
+      </section>
 
-  <section id="Semaine S1-B2">
-    <h2> Semaine S1-B2 </h2>
-    <h3>Les objectifs de cette semaine étaient :</h3>
-    <li>
-      <b>Création d’une machine virtuelle</b> de type Linux sur VirtualBox, VMWare, Stratus…
-    </li>
-    <p>
-      Comme on avait expliqué au début de ce rapport aussi. On avait une MacAir comme machine,
-      donc on a préféré utiliser UTM comme hyperviseurs pour pouvoir installer Linux et aussi
-      réaliser notre projet.
-    </p>
-    <h4> Ce qu'on a fait </h4>
-    <ol>
-      <li>
+      <section id="Semaine S1-B2">
+        <h2> Semaine S1-B2 </h2>
+        <h3>Les objectifs de cette semaine étaient :</h3>
+        <li>
+          <b>Création d’une machine virtuelle</b> de type Linux sur VirtualBox, VMWare, Stratus…
+        </li>
         <p>
-          D'abord, nous avons installé UTM sur notre machine.
+          Comme on avait expliqué au début de ce rapport aussi. On avait une MacAir comme machine,
+          donc on a préféré utiliser UTM comme hyperviseurs pour pouvoir installer Linux et aussi
+          réaliser notre projet.
         </p>
-        <img src="1.png" alt="1ere" width="550" height="300" >
-        <a href="https://mac.getutm.app" target="_blank">
-          Vous pouvez accéder à la page UTM et télécharger UTM sur votre ordinateur en cliquant ici !
-        </a>
-      </li>
-      <li>
-        <p>
-          Et nous avons complété l'installation sur notre ordinateur.
-        </p>
-        <img src="2.png" alt="2eme" width="500" height="300" >
-        <p>
-          Une fois que l'application est téléchargée, vous pouvez la trouver comme dans
-          l'image ci-dessus, et en cliquant sur l'icône de disk, vous allez être dirigé
-          vers le guide d'installation d'application sur votre ordinateur directement.
-          Sur les MAC, c'est assez facile.
-        </p>
-        <img src="3.png" alt="3eme" width="500" height="350" >
-        <p>
-          Quand vous allez arriver à cette étape, il faut juste rester appuyé et glisser
-          l'icône d'UTM sur le dossier d'Applications qui apparaît juste à côté.
-        </p>
-        <p>
-          Maintenant, vous pouvez trouver UTM sur votre ordinateur, dans les applications.
-        </p>
-      </li>
-    </ol>
-  </section>
+        <h4> Ce qu'on a fait </h4>
+        <ol>
+          <li>
+            <p>
+              D'abord, nous avons installé UTM sur notre machine.
+            </p>
+            <img src="1.png" alt="1ere" width="550" height="300" >
+            <a href="https://mac.getutm.app" target="_blank">
+              Vous pouvez accéder à la page UTM et télécharger UTM sur votre ordinateur en cliquant ici !
+            </a>
+          </li>
+          <li>
+            <p>
+              Et nous avons complété l'installation sur notre ordinateur.
+            </p>
+            <img src="2.png" alt="2eme" width="500" height="300" >
+            <p>
+              Une fois que l'application est téléchargée, vous pouvez la trouver comme dans
+              l'image ci-dessus, et en cliquant sur l'icône de disk, vous allez être dirigé
+              vers le guide d'installation d'application sur votre ordinateur directement.
+              Sur les MAC, c'est assez facile.
+            </p>
+            <img src="3.png" alt="3eme" width="500" height="350" >
+            <p>
+              Quand vous allez arriver à cette étape, il faut juste rester appuyé et glisser
+              l'icône d'UTM sur le dossier d'Applications qui apparaît juste à côté.
+            </p>
+            <p>
+              Maintenant, vous pouvez trouver UTM sur votre ordinateur, dans les applications.
+            </p>
+          </li>
+        </ol>
+      </section>
 
-  <section id="Semaine S1-B3">
-    <h2> Semaine S1-B3 </h2>
-    <h3>Les objectifs de cette semaine étaient :</h3>
-    <li>
-      <b> Création et utilisation d’une MV. </b>
-    </li>
-    <h4> Ce qu'on a fait </h4>
-    <ol>
-      <li>
-        <p>
-          Premièrement, Nous avons installé notre machine virtuelle basée sur Linux en
-          suivant les étapes nécessaires via UTM.
-        </p>
-        <p>
-          Quand vous allez ouvrir UTM, en premier vous allez voir cette page :
-        </p>
-        <img src="4.png" alt="4eme" width="500" height="350" >
-        <p>
-          Donc ici, il faut cliquer sur "Créer une nouvelle machine virtuelle (VM)"
-        </p>
-      </li>
-      <li>
-        <p>
-          Et puis, vous allez avoir cette page, ici il faut choisir "Virtualize" :
-        </p>
-        <img src="5.png" alt="5eme" width="500" height="350" >
-      </li>
-      <li>
-        <p>
-          Maintenant ici, il nous demande de choisir le système d'exploitation qu'on
-          veut installer sur la machine virtuelle, donc on choisit "Linux".
-        </p>
-        <img src="6.png" alt="6eme" width="500" height="350" >
-      </li>
-      <li>
-        <p>
-          Après cette étape ; Pour charger le fichier ISO de la version Linux que nous
-          souhaitons créer sur notre ordinateur, nous devons accéder soit au site Web UTM,
-          soit au site Web Ubuntu. Nous avons trouvé et téléchargé le fichier ISO dont
-          nous avions besoin sur le site Web d'UTM. Parce qu'UTM a une page de "gallery"
-          sur leur site web, et donc ici vous pouvez trouver tous les dossiers d'ISO des
-          différents systèmes d'exploitation et leurs différentes versions que vous voulez installer.
-          Nous vous laissons ci-dessous les liens vers le site Web d'UTM et le site Web d'Ubuntu.
-          Vous pouvez donc télécharger le fichier ISO.
-        </p>
-        <p>
-          Vous pouvez aller sur le site en cliquant sur l'image :
-        </p>
-        <a href="https://mac.getutm.app/gallery/" target="_blank">
-          <img src="Gallery.png" alt="Gallery" width="550" height="350" >
-        </a>
-        <img src="7.png" alt="7eme" width="550" height="350" >
-        <p>
-          Pour installer le dossier d'ISO sur Ubuntu :
-        </p>
-        <a href="https://ubuntu.com/download/server/arm" target="_blank">
-          <img src="Ubuntu.png" alt="Ubuntu" width="550" height="350" >
-        </a>
-      </li>
-      <li>
-        <p>
-          Une fois que le dossier d'ISO est installé, on peut continuer de faire
-          l'installation de Linux.
-        </p>
-        <img src="9.png" alt="9eme" width="550" height="350" >
-      </li>
-      <li>
-        <p>
-          Ici, on doit mettre le dossier d'ISO qu'on vient d'installer,
-          dans le champ "Boot ISO Image", et puis on clique sur "Continuer".
-        </p>
-        <img src="10.png" alt="10eme" width="550" height="350" >
-      </li>
-      <li>
-        <p>
-          Maintenant, on doit choisir la place de mémoire qu'on veut donner à notre machine virtuelle.
-          Nous avons trouvé assez de 4096 MiB pour mémoire, et puis il faut choisir
-          les cœurs de CPU que vous allez donner à votre machine virtuelle. Ici encore,
-          nous avons trouvé assez de 4 CPU pour créer notre machine virtuelle,
-          puis vous pouvez faire "continuer".
-        </p>
-        <img src="11.png" alt="11eme" width="550" height="350" >
-      </li>
-      <li>
-        <p>
-          Après cette étape, vous devez choisir la taille de stockage de votre machine
-          virtuelle, nous avons choisi 64 Go. Cependant, vous devez vous assurer qu'il y a suffisamment
-          d'espace sur votre ordinateur pour télécharger l'hyperviseur, pour télécharger le dossier ISO et
-          pour donner à votre machine virtuelle la taille que vous jugez nécessaire.
-        </p>
-        <img src="12.png" alt="12eme" width="550" height="350" >
-      </li>
-      <li>
-        <p>
-          Pour cette étape, vous devez parcourir les dossiers de votre ordinateur que
-          vous voulez trouver directement dans votre machine virtuelle. Nous avons parcouru
-          le dossier de "Téléchargements" dans cette étape.
-        </p>
-        <img src="14.png" alt="14eme" width="550" height="350" >
-      </li>
-      <li>
-        <p>
-          Ici, vous devez donner un nom à votre machine virtuelle que vous venez de créer
-          et en plus il faut vérifier les informations qui sont écrites. Ce sont des
-          informations que vous venez de saisir pour la création de votre machine virtuelle,
-          il faut être sûr qu'elles sont correctes. Après avoir cliqué sur le bouton "Enregistrer",
-          vous finalisez la création de votre machine virtuelle.
-        </p>
-        <img src="15.png" alt="15eme" width="550" height="350" >
-      </li>
-      <p>
-        Une fois que votre machine virtuelle est installée et créée, la page d'accueil
-        d'UTM ressemble à ça. Donc maintenant, il va falloir démarrer votre machine virtuelle
-        pour finaliser les configurations pour que ça soit prêt à utiliser.
-      </p>
-      <p>
-        En cliquant sur le bouton de "play", vous allez faire marcher votre machine virtuelle.
-      </p>
-      <li>
-        <p>
-          Quand votre machine virtuelle va être démarrée, vous allez avoir cette page en premier.
-          Ici, il faut choisir le choix " Try and Install Ubuntu"
-        </p>
-        <img src="16.png" alt="16eme" width="550" height="350" >
-      </li>
-      <p>
-        Après ce choix, vous allez avoir quelques questions comme choix de langue pour
-        votre machine, ou configuration de clavier, etc. Après toutes ces étapes simples,
-        vous allez avoir une question comme ça :
-      </p>
-      <li>
-        <img src="19.png" alt="19eme" width="550" height="350" >
-        <p>
-          Pour cette étape, il faut choisir "Installer Ubuntu"
-        </p>
-      </li>
-      <li>
-        <img src="20.png" alt="20eme" width="550" height="350" >
-        <p>
-          Puis le choix "Installation interactive" comme dans l'image
-        </p>
-      </li>
-      <li>
-        <img src="21.png" alt="21eme" width="550" height="350" >
-        <p>
-          Dans cette étape, vous pouvez choisir ce que vous voulez, nous avons choisi "Installation complète"
-        </p>
-      </li>
-      <p>
-        Après cette étape, vous allez avoir une question concernant l'installation des
-        logiciels propriétaires recommandés. Encore ici, vous êtes libre dans votre choix.
-        En lisant les détails, vous pouvez faire vos choix.
-      </p>
-      <li>
-        <p>
-          Maintenant, il faut choisir le premier choix, comme dans l'image.
-        </p>
-        <img src="23.png" alt="23eme" width="550" height="350" >
-      </li>
-      <li>
-        <p>
-          Après le dernier choix, vous devez créer un compte d'utilisateur.
-        </p>
-        <img src="24.png" alt="24eme" width="550" height="350" >
-      </li>
-      <li>
-        <p>
-          Et puis votre localisation pour création de compte utilisateur.
-        </p>
-        <img src="25.png" alt="25eme" width="550" height="350" >
-      </li>
-      <li>
-        <p>
-          Dans cette dernière étape, vous devez vérifier les informations que vous
-          venez de saisir, et si tout est bon, il va falloir cliquer sur le bouton "installer".
-        </p>
-        <img src="26.png" alt="26eme" width="550" height="350" >
-      </li>
-      <p>
-        Quand l'installation va finir. Votre machine va vous informer et vous demander
-        aussi si vous voulez "continuer à essayer" ou "rédemarrer maintenant". Dans ce cas,
-        il faut choisir "continuer à essayer" et puis "éteindre" la machine comme
-        montré dans l'image ci-dessous
-      </p>
-      <li>
-        <img src="28.png" alt="28eme" width="550" height="350" >
-        <p>
-          On est obligé de fermer la machine comme ça, sans dire redémarrer maintenant; parce qu'il
-          nous reste une dernière manipulation à faire avant de pouvoir utiliser notre machine virtuelle.
-        </p>
-      </li>
-      <li>
-        <p>
-          Une fois que vous avez éteint votre machine, vous allez vous retrouver dans la
-          page d'accueil comme au début. Maintenant, avant de redémarrer votre machine virtuelle,
-          il faut effacer le dossier d'ISO qu'on avait parcouru dans le menu de CD/DVD,
-          comme c'est fait dans l'image ci-dessous:
-        </p>
-        <img src="29.png" alt="29eme" width="550" height="350" >
-        <p>
-          On fait ça parce que notre machine virtuelle est prête, donc on retire l'image d'ISO
-          qu'on vient de monter. Comme ça, au prochain démarrage, on va démarrer notre
-          machine directement sur le système d'exploitation qu'on vient de créer et pas sur le CD/DVD.
-          Donc, une fois que CD/DVD est "vide", on peut relancer notre machine virtuelle.
-        </p>
-      </li>
-      <li>
-        <img src="30.png" alt="30eme" width="550" height="350" >
-        <p>
-          Et donc, après cette dernière manip, quand vous allez redémarrer votre machine,
-          vous allez trouver le compte que vous venez de créer, et donc en rentrant le code personnel ;
-          vous pouvez utiliser votre machine virtuelle.
-        </p>
-      </li>
-    </ol>
+      <section id="Semaine S1-B3">
+        <h2> Semaine S1-B3 </h2>
+        <h3>Les objectifs de cette semaine étaient :</h3>
+        <li>
+          <b> Création et utilisation d’une MV. </b>
+        </li>
+        <h4> Ce qu'on a fait </h4>
+        <ol>
+          <li>
+            <p>
+              Premièrement, Nous avons installé notre machine virtuelle basée sur Linux en
+              suivant les étapes nécessaires via UTM.
+            </p>
+            <p>
+              Quand vous allez ouvrir UTM, en premier vous allez voir cette page :
+            </p>
+            <img src="4.png" alt="4eme" width="500" height="350" >
+            <p>
+              Donc ici, il faut cliquer sur "Créer une nouvelle machine virtuelle (VM)"
+            </p>
+          </li>
+          <li>
+            <p>
+              Et puis, vous allez avoir cette page, ici il faut choisir "Virtualize" :
+            </p>
+            <img src="5.png" alt="5eme" width="500" height="350" >
+          </li>
+          <li>
+            <p>
+              Maintenant ici, il nous demande de choisir le système d'exploitation qu'on
+              veut installer sur la machine virtuelle, donc on choisit "Linux".
+            </p>
+            <img src="6.png" alt="6eme" width="500" height="350" >
+          </li>
+          <li>
+            <p>
+              Après cette étape ; Pour charger le fichier ISO de la version Linux que nous
+              souhaitons créer sur notre ordinateur, nous devons accéder soit au site Web UTM,
+              soit au site Web Ubuntu. Nous avons trouvé et téléchargé le fichier ISO dont
+              nous avions besoin sur le site Web d'UTM. Parce qu'UTM a une page de "gallery"
+              sur leur site web, et donc ici vous pouvez trouver tous les dossiers d'ISO des
+              différents systèmes d'exploitation et leurs différentes versions que vous voulez installer.
+              Nous vous laissons ci-dessous les liens vers le site Web d'UTM et le site Web d'Ubuntu.
+              Vous pouvez donc télécharger le fichier ISO.
+            </p>
+            <p>
+              Vous pouvez aller sur le site en cliquant sur l'image :
+            </p>
+            <a href="https://mac.getutm.app/gallery/" target="_blank">
+              <img src="Gallery.png" alt="Gallery" width="550" height="350" >
+            </a>
+            <img src="7.png" alt="7eme" width="550" height="350" >
+            <p>
+              Pour installer le dossier d'ISO sur Ubuntu :
+            </p>
+            <a href="https://ubuntu.com/download/server/arm" target="_blank">
+              <img src="Ubuntu.png" alt="Ubuntu" width="550" height="350" >
+            </a>
+          </li>
+          <li>
+            <p>
+              Une fois que le dossier d'ISO est installé, on peut continuer de faire
+              l'installation de Linux.
+            </p>
+            <img src="9.png" alt="9eme" width="550" height="350" >
+          </li>
+          <li>
+            <p>
+              Ici, on doit mettre le dossier d'ISO qu'on vient d'installer,
+              dans le champ "Boot ISO Image", et puis on clique sur "Continuer".
+            </p>
+            <img src="10.png" alt="10eme" width="550" height="350" >
+          </li>
+          <li>
+            <p>
+              Maintenant, on doit choisir la place de mémoire qu'on veut donner à notre machine virtuelle.
+              Nous avons trouvé assez de 4096 MiB pour mémoire, et puis il faut choisir
+              les cœurs de CPU que vous allez donner à votre machine virtuelle. Ici encore,
+              nous avons trouvé assez de 4 CPU pour créer notre machine virtuelle,
+              puis vous pouvez faire "continuer".
+            </p>
+            <img src="11.png" alt="11eme" width="550" height="350" >
+          </li>
+          <li>
+            <p>
+              Après cette étape, vous devez choisir la taille de stockage de votre machine
+              virtuelle, nous avons choisi 64 Go. Cependant, vous devez vous assurer qu'il y a suffisamment
+              d'espace sur votre ordinateur pour télécharger l'hyperviseur, pour télécharger le dossier ISO et
+              pour donner à votre machine virtuelle la taille que vous jugez nécessaire.
+            </p>
+            <img src="12.png" alt="12eme" width="550" height="350" >
+          </li>
+          <li>
+            <p>
+              Pour cette étape, vous devez parcourir les dossiers de votre ordinateur que
+              vous voulez trouver directement dans votre machine virtuelle. Nous avons parcouru
+              le dossier de "Téléchargements" dans cette étape.
+            </p>
+            <img src="14.png" alt="14eme" width="550" height="350" >
+          </li>
+          <li>
+            <p>
+              Ici, vous devez donner un nom à votre machine virtuelle que vous venez de créer
+              et en plus il faut vérifier les informations qui sont écrites. Ce sont des
+              informations que vous venez de saisir pour la création de votre machine virtuelle,
+              il faut être sûr qu'elles sont correctes. Après avoir cliqué sur le bouton "Enregistrer",
+              vous finalisez la création de votre machine virtuelle.
+            </p>
+            <img src="15.png" alt="15eme" width="550" height="350" >
+          </li>
+          <p>
+            Une fois que votre machine virtuelle est installée et créée, la page d'accueil
+            d'UTM ressemble à ça. Donc maintenant, il va falloir démarrer votre machine virtuelle
+            pour finaliser les configurations pour que ça soit prêt à utiliser.
+          </p>
+          <p>
+            En cliquant sur le bouton de "play", vous allez faire marcher votre machine virtuelle.
+          </p>
+          <li>
+            <p>
+              Quand votre machine virtuelle va être démarrée, vous allez avoir cette page en premier.
+              Ici, il faut choisir le choix " Try and Install Ubuntu"
+            </p>
+            <img src="16.png" alt="16eme" width="550" height="350" >
+          </li>
+          <p>
+            Après ce choix, vous allez avoir quelques questions comme choix de langue pour
+            votre machine, ou configuration de clavier, etc. Après toutes ces étapes simples,
+            vous allez avoir une question comme ça :
+          </p>
+          <li>
+          <img src="19.png" alt="19eme" width="550" height="350" >
+            <p>
+              Pour cette étape, il faut choisir "Installer Ubuntu"
+            </p>
+          </li>
+          <li>
+            <img src="20.png" alt="20eme" width="550" height="350" >
+            <p>
+              Puis le choix "Installation interactive" comme dans l'image
+            </p>
+          </li>
+          <li>
+            <img src="21.png" alt="21eme" width="550" height="350" >
+            <p>
+              Dans cette étape, vous pouvez choisir ce que vous voulez, nous avons choisi "Installation complète"
+            </p>
+          </li>
+          <p>
+            Après cette étape, vous allez avoir une question concernant l'installation des
+            logiciels propriétaires recommandés. Encore ici, vous êtes libre dans votre choix.
+            En lisant les détails, vous pouvez faire vos choix.
+          </p>
+          <li>
+            <p>
+              Maintenant, il faut choisir le premier choix, comme dans l'image.
+            </p>
+            <img src="23.png" alt="23eme" width="550" height="350" >
+          </li>
+          <li>
+            <p>
+              Après le dernier choix, vous devez créer un compte d'utilisateur.
+            </p>
+            <img src="24.png" alt="24eme" width="550" height="350" >
+          </li>
+          <li>
+            <p>
+              Et puis votre localisation pour création de compte utilisateur.
+            </p>
+            <img src="25.png" alt="25eme" width="550" height="350" >
+          </li>
+          <li>
+            <p>
+              Dans cette dernière étape, vous devez vérifier les informations que vous
+              venez de saisir, et si tout est bon, il va falloir cliquer sur le bouton "installer".
+            </p>
+            <img src="26.png" alt="26eme" width="550" height="350" >
+          </li>
+          <p>
+            Quand l'installation va finir. Votre machine va vous informer et vous demander
+            aussi si vous voulez "continuer à essayer" ou "rédemarrer maintenant". Dans ce cas,
+            il faut choisir "continuer à essayer" et puis "éteindre" la machine comme
+            montré dans l'image ci-dessous
+          </p>
+          <li>
+            <img src="28.png" alt="28eme" width="550" height="350" >
+            <p>
+              On est obligé de fermer la machine comme ça, sans dire redémarrer maintenant; parce qu'il
+              nous reste une dernière manipulation à faire avant de pouvoir utiliser notre machine virtuelle.
+            </p>
+          </li>
+          <li>
+            <p>
+              Une fois que vous avez éteint votre machine, vous allez vous retrouver dans la
+              page d'accueil comme au début. Maintenant, avant de redémarrer votre machine virtuelle,
+              il faut effacer le dossier d'ISO qu'on avait parcouru dans le menu de CD/DVD,
+              comme c'est fait dans l'image ci-dessous:
+            </p>
+            <img src="29.png" alt="29eme" width="550" height="350" >
+            <p>
+              On fait ça parce que notre machine virtuelle est prête, donc on retire l'image d'ISO
+              qu'on vient de monter. Comme ça, au prochain démarrage, on va démarrer notre
+              machine directement sur le système d'exploitation qu'on vient de créer et pas sur le CD/DVD.
+              Donc, une fois que CD/DVD est "vide", on peut relancer notre machine virtuelle.
+            </p>
+          </li>
+          <li>
+            <img src="30.png" alt="30eme" width="550" height="350" >
+            <p>
+              Et donc, après cette dernière manip, quand vous allez redémarrer votre machine,
+              vous allez trouver le compte que vous venez de créer, et donc en rentrant le code personnel ;
+              vous pouvez utiliser votre machine virtuelle.
+            </p>
+          </li>
+        </ol>
 
-    <li>
-      <b> Création d’un compte administrateur admin_GrXX_BinomeYY </b>, XX et YY étant respectivement votre
-      numéro de groupe et de binôme.
-    </li>
-    <h4> Ce qu'on a fait : </h4>
-    <ol>
-      <li>
-        <p>
-          Premièrement, nous avons exécuté la commande "sudo adduser admin_Gr104_BinomeG2",
-          mais il y avait une erreur dans le nom qu'on voulait mettre,
-          donc on a modifié le nom avec : "administrateur_gr104_binomeg2" (juste on a mis en minuscule les lettres qu'on avait écrites en majuscule).
-          Et grâce à cette commande, nous avons réussi à créer un utilisateur.
-          Comme vous pouvez le voir dans l'image ci-dessous.
-        </p>
-        <img src="S1-B3_1.png" alt="S1-B3_1" width="550" height="400" >
-      </li>
-      <li>
-        <p>
-          Ensuite, le Terminal nous demandait quelques informations complémentaires
-          pour finaliser la création d'utilisateur, nous avons passé ces étapes
-          en faisant "Entrée" pour chaque fois. Parce qu'à part de la "mot de passe",
-          vous n'êtes pas obligé de renseigner les autres informations.
-        </p>
-        <img src="S1-B3_2.png" alt="S1-B3_2" width="550" height="400" >
-        <p>
-          Donc ici on voit que l'utilisateur "admin_gr104_binomeg2" a été créé
-          et ajouté dans le groupe "users".
-        </p>
-      </li>
-      <li>
-        <p>
-          On veut que cet utilisateur ait les droits d'administrateur,
-          pour que ce soit un compte administrateur. Donc, avec les commandes suivantes,
-          on va lui donner les droits administrateurs.
-        </p>
-        <img src="S1-B3_3.png" alt="S1-B3_3" width="550" height="400" >
-        <p>
-          En faisant "sudo usermod -aG sudo admin_gr104_binomeg2",
-          on a attribué des droits administrateurs à cet utilisateur.
-          En réalité, on l’a ajouté au groupe sudo, ce qui permet à cet utilisateur
-          de devenir un compte pouvant exécuter des commandes administratives avec sudo.
-        </p>
-        <p>
-          La commande suivante visible sur l'image, "sudo -l -U admin_gr104_binomeg2" ,
-          permet de vérifier si cet utilisateur a bien obtenu les droits d’administrateur.
-          Dans la sortie obtenue, la dernière ligne qui indique "(ALL:ALL) ALL",
-          ce qui signifie que cet utilisateur peut désormais exécuter toutes les
-          commandes administratives avec sudo. Cela confirme qu'il dispose bien
-          des droits administrateurs.
-        </p>
-      </li>
-    </ol>
+        <li>
+          <b> Création d’un compte administrateur admin_GrXX_BinomeYY </b>, XX et YY étant respectivement votre
+          numéro de groupe et de binôme.
+        </li>
+        <h4> Ce qu'on a fait : </h4>
+        <ol>
+          <li>
+            <p>
+              Premièrement, nous avons exécuté la commande "sudo adduser admin_Gr104_BinomeG2",
+              mais il y avait une erreur dans le nom qu'on voulait mettre,
+              donc on a modifié le nom avec : "administrateur_gr104_binomeg2" (juste on a mis en minuscule les lettres qu'on avait écrites en majuscule).
+              Et grâce à cette commande, nous avons réussi à créer un utilisateur.
+              Comme vous pouvez le voir dans l'image ci-dessous.
+            </p>
+            <img src="S1-B3_1.png" alt="S1-B3_1" width="550" height="400" >
+          </li>
+          <li>
+            <p>
+              Ensuite, le Terminal nous demandait quelques informations complémentaires
+              pour finaliser la création d'utilisateur, nous avons passé ces étapes
+              en faisant "Entrée" pour chaque fois. Parce qu'à part de la "mot de passe",
+              vous n'êtes pas obligé de renseigner les autres informations.
+            </p>
+            <img src="S1-B3_2.png" alt="S1-B3_2" width="550" height="400" >
+            <p>
+              Donc ici on voit que l'utilisateur "admin_gr104_binomeg2" a été créé
+              et ajouté dans le groupe "users".
+            </p>
+          </li>
+          <li>
+            <p>
+              On veut que cet utilisateur ait les droits d'administrateur,
+              pour que ce soit un compte administrateur. Donc, avec les commandes suivantes,
+              on va lui donner les droits administrateurs.
+            </p>
+            <img src="S1-B3_3.png" alt="S1-B3_3" width="550" height="400" >
+            <p>
+              En faisant "sudo usermod -aG sudo admin_gr104_binomeg2",
+              on a attribué des droits administrateurs à cet utilisateur.
+              En réalité, on l’a ajouté au groupe sudo, ce qui permet à cet utilisateur
+              de devenir un compte pouvant exécuter des commandes administratives avec sudo.
+            </p>
+            <p>
+              La commande suivante visible sur l'image, "sudo -l -U admin_gr104_binomeg2" ,
+              permet de vérifier si cet utilisateur a bien obtenu les droits d’administrateur.
+              Dans la sortie obtenue, la dernière ligne qui indique "(ALL:ALL) ALL",
+              ce qui signifie que cet utilisateur peut désormais exécuter toutes les
+              commandes administratives avec sudo. Cela confirme qu'il dispose bien
+              des droits administrateurs.
+            </p>
+          </li>
+        </ol>
 
-    <li>
-      <b> Création de deux utilisateurs BinomeYY_1 et BinomeYY_2.</b>
-    </li>
-    <h4> Ce qu'on a fait : </h4>
-    <ol>
-      <li>
-        <p>
-          Donc pour cette partie, nous avons créé l'utilisateur "binomeg2_1"
-          en faisant "sudo adduser binomeg2_1", comme précédemment.
-        </p>
-        <img src="S1-B3_4.png" alt="S1-B3_4" width="550" height="400" >
-        <p>
-          Ces deux utilisateurs ne sont pas des "comptes administrateurs",
-          donc on ne leur attribue aucun droit. Après avoir créé le premier utilisateur demandé,
-          on peut passer à créer le deuxième.
-        </p>
-      </li>
-      <li>
-        <p>
-          Nous créons le deuxième utilisateur en faisant la même chose que dans l’image précédente.
-        </p>
-        <img src="S1-B3_5.png" alt="S1-B3_5" width="550" height="400" >
-      </li>
-      <li>
-        <p>
-          Enfin, pour vérifier que ces deux utilisateurs ont bien été créés,
-          on regarde les sorties en entrant les commandes "cat /etc/passwd | grep nom d'utilisateur"
-          dans l'image ci-dessous et on voit que les deux utilisateurs ont bien été établis comme souhaité.
-        </p>
-        <img src="S1-B3_6.png" alt="S1-B3_6" width="550" height="400" >
-        <p>
-          Ici la commande "cat/etc/passwd" affiche le contenu du fichier qui contient
-          des informations sur les comptes utilisateurs présents sur le système.
-        </p>
-      </li>
-    </ol>
+        <li>
+          <b> Création de deux utilisateurs BinomeYY_1 et BinomeYY_2.</b>
+        </li>
+        <h4> Ce qu'on a fait : </h4>
+        <ol>
+          <li>
+            <p>
+              Donc pour cette partie, nous avons créé l'utilisateur "binomeg2_1"
+              en faisant "sudo adduser binomeg2_1", comme précédemment.
+            </p>
+            <img src="S1-B3_4.png" alt="S1-B3_4" width="550" height="400" >
+            <p>
+              Ces deux utilisateurs ne sont pas des "comptes administrateurs",
+              donc on ne leur attribue aucun droit. Après avoir créé le premier utilisateur demandé,
+              on peut passer à créer le deuxième.
+            </p>
+          </li>
+          <li>
+            <p>
+              Nous créons le deuxième utilisateur en faisant la même chose que dans l’image précédente.
+            </p>
+            <img src="S1-B3_5.png" alt="S1-B3_5" width="550" height="400" >
+          </li>
+          <li>
+            <p>
+              Enfin, pour vérifier que ces deux utilisateurs ont bien été créés,
+              on regarde les sorties en entrant les commandes "cat /etc/passwd | grep nom d'utilisateur"
+              dans l'image ci-dessous et on voit que les deux utilisateurs ont bien été établis comme souhaité.
+            </p>
+            <img src="S1-B3_6.png" alt="S1-B3_6" width="550" height="400" >
+            <p>
+              Ici la commande "cat/etc/passwd" affiche le contenu du fichier qui contient
+              des informations sur les comptes utilisateurs présents sur le système.
+            </p>
+          </li>
+        </ol>
 
-    <li>
-      <b> Création d’un groupe BinomeYY. </b>
-    </li>
-    <h4> Ce qu'on a fait : </h4>
-    <ol>
-      <li>
-        <p>
-          Pour créer " un groupe BinomeYY "; On fait "sud groupadd binomeg2"
-          et maintenant le groupe est créé.
-        </p>
-        <img src="S1-B3_7.png" alt="S1-B3_7" width="550" height="400" >
-        <p>
-          Après ça, il faut ajouter les utilisateurs qu'on a créés dans le groupe
-          qu'on vient de créer. Donc pour cela on fait "sudo usermod -aG binomeg2 binomeg2_1"
-          et même chose pour 2ème utilisateur, comme ça ces utilisateurs vont être
-          ajoutés dans le groupe qu'on vient de créer.
-        </p>
-        <p>
-          Et enfin, en faisant "groups nom d'utilisateur", on peut vérifier
-          s'ils ont bien été ajoutés dans le groupe.
-        </p>
-      </li>
-    </ol>
-    <li>
-      <b> Personnalisation d’une invite de commande </b> (prompt) paramétrée avec le nom de l’utilisateur.
-    </li>
-    <h4> Ce qu'on a fait : </h4>
-    <ol>
-      <li>
-        <p>
-          Donc, d'abord on tape la commande " export PS1="[\u] \$".
-          Cette commande permet de définir une variable d'environnement et
-          de la rendre disponible pour les sous-processus du terminal avec
-          "export"; "PS1" est la variable exportée qui contrôle l’apparence
-          de l'invite de commande (prompt), donc ce qu'on va modifier pour
-          personaliser "prompt".
-        </p>
-        <img src="S1-B3_8.png" alt="S1-B3_8" width="550" height="400" >
-        <p>
-          Au même temps ici, "\u" représente le nom de l'utilisateur connecté.
-          Donc pendant cette manipulation, notre camarade Bilal avait connecté
-          avec son compte personnel, c'est pour ça qu'il a affiché "[bilal]".
-          Et la commande "\$" pour afficher le caractère $ pour un utilisateur normal.
-        </p>
-        <p>
-          Après, on tape la commande "nano ~/.bashrc". Cette commande nous permet
-          d'ouvrir et de modifier un fichier de configuration important. Ici la
-          commande "nano" c'est un éditeur de texte. On peut ouvrir et modifier
-          des fichiers texte avec cet éditeur dans le terminal.
-        </p>
-        <p>
-          Et la commande " ~ " pour voir le répertoire home de l'utilisateur actuel.
-          L'autre commande ".bashrc" s'agit d'un fichier de configuration pour
-          le shell Bash. Ce fichier est exécuté chaque fois qu'un terminal Bash est ouvert.
-          Il contient des paramètres de configuration, des alias, des fonctions
-          et des personnalisations de l'environnement utilisateur, comme la personnalisation
-          de l'invite de commande avec PS1.
-        </p>
-      </li>
-      <li>
-        <p>
-          Donc quand on exécute la commande "nano ~/.bashrc", on a le fichier
-          "bashrc" qui s'ouvre. Donc dans ce fichier, on va faire les
-          modifications nécessaires pour changer la variable PS1.
-        </p>
-        <img src="S1-B3_9.png" alt="S1-B3_9" width="550" height="400" >
-      </li>
-      <li>
-        <p>
-          Pour modifier la variable PS1, il suffit de descendre jusqu'en bas
-          du fichier ~/.bashrc et d'ajouter la ligne export PS1="[\u] \$".
-          Cette modification change l'apparence du prompt en affichant le nom
-          de l'utilisateur connecté. Ainsi, le prompt sera désormais personnalisé
-          de manière permanente.
-        </p>
-        <img src="S1-B3_10.png" alt="S1-B3_10" width="550" height="400" >
-        <p>
-          Une fois qu'on ajoute cette ligne, on fait "Control + O" pour enregistrer le fichier,
-          puis "Entrée" pour confirmer le nom du fichier et enfin "Control + X" pour quitter nano.
-        </p>
-      </li>
-      <li>
-        <p>
-        <p>
-          Une fois qu'on quitte nano, on tape la commande " source ~/.bashrc"
-          pour charger le fichier ~/.bashrc sans avoir besoin de fermer et
-          rouvrir le terminal.
-        </p>
-        </p>
-        <img src="S1-B3_11.png" alt="S1-B3_11" width="550" height="400" >
-      </li>
-      <li>
-        <p>
-          Donc maintenant on est sûr que le prompt a été modifié d'après la première photo,
-          on peut même fermer et rouvrir le Terminal pour vérifier et confirmer
-          le changement comme dans la deuxième photo.
-        </p>
-        <img src="S1-B3_12.png" alt="S1-B3_1é" width="550" height="400" >
-        <p>
+        <li>
+          <b> Création d’un groupe BinomeYY. </b>
+        </li>
+        <h4> Ce qu'on a fait : </h4>
+        <ol>
+          <li>
+            <p>
+              Pour créer " un groupe BinomeYY "; On fait "sud groupadd binomeg2"
+              et maintenant le groupe est créé.
+            </p>
+            <img src="S1-B3_7.png" alt="S1-B3_7" width="550" height="400" >
+            <p>
+              Après ça, il faut ajouter les utilisateurs qu'on a créés dans le groupe
+              qu'on vient de créer. Donc pour cela on fait "sudo usermod -aG binomeg2 binomeg2_1"
+              et même chose pour 2ème utilisateur, comme ça ces utilisateurs vont être
+              ajoutés dans le groupe qu'on vient de créer.
+            </p>
+            <p>
+              Et enfin, en faisant "groups nom d'utilisateur", on peut vérifier
+              s'ils ont bien été ajoutés dans le groupe.
+            </p>
+          </li>
+        </ol>
+        <li>
+          <b> Personnalisation d’une invite de commande </b> (prompt) paramétrée avec le nom de l’utilisateur.
+        </li>
+        <h4> Ce qu'on a fait : </h4>
+          <ol>
+            <li>
+              <p>
+                Donc, d'abord on tape la commande " export PS1="[\u] \$".
+                Cette commande permet de définir une variable d'environnement et
+                de la rendre disponible pour les sous-processus du terminal avec
+                "export"; "PS1" est la variable exportée qui contrôle l’apparence
+                de l'invite de commande (prompt), donc ce qu'on va modifier pour
+                personaliser "prompt".
+              </p>
+              <img src="S1-B3_8.png" alt="S1-B3_8" width="550" height="400" >
+              <p>
+                Au même temps ici, "\u" représente le nom de l'utilisateur connecté.
+                Donc pendant cette manipulation, notre camarade Bilal avait connecté
+                avec son compte personnel, c'est pour ça qu'il a affiché "[bilal]".
+                Et la commande "\$" pour afficher le caractère $ pour un utilisateur normal.
+              </p>
+              <p>
+                Après, on tape la commande "nano ~/.bashrc". Cette commande nous permet
+                d'ouvrir et de modifier un fichier de configuration important. Ici la
+                commande "nano" c'est un éditeur de texte. On peut ouvrir et modifier
+                des fichiers texte avec cet éditeur dans le terminal.
+              </p>
+              <p>
+                Et la commande " ~ " pour voir le répertoire home de l'utilisateur actuel.
+                L'autre commande ".bashrc" s'agit d'un fichier de configuration pour
+                le shell Bash. Ce fichier est exécuté chaque fois qu'un terminal Bash est ouvert.
+                Il contient des paramètres de configuration, des alias, des fonctions
+                et des personnalisations de l'environnement utilisateur, comme la personnalisation
+                de l'invite de commande avec PS1.
+              </p>
+            </li>
+            <li>
+              <p>
+                Donc quand on exécute la commande "nano ~/.bashrc", on a le fichier
+                "bashrc" qui s'ouvre. Donc dans ce fichier, on va faire les
+                modifications nécessaires pour changer la variable PS1.
+              </p>
+              <img src="S1-B3_9.png" alt="S1-B3_9" width="550" height="400" >
+            </li>
+            <li>
+              <p>
+                Pour modifier la variable PS1, il suffit de descendre jusqu'en bas
+                du fichier ~/.bashrc et d'ajouter la ligne export PS1="[\u] \$".
+                Cette modification change l'apparence du prompt en affichant le nom
+                de l'utilisateur connecté. Ainsi, le prompt sera désormais personnalisé
+                de manière permanente.
+              </p>
+              <img src="S1-B3_10.png" alt="S1-B3_10" width="550" height="400" >
+              <p>
+                Une fois qu'on ajoute cette ligne, on fait "Control + O" pour enregistrer le fichier,
+                puis "Entrée" pour confirmer le nom du fichier et enfin "Control + X" pour quitter nano.
+              </p>
+            </li>
+            <li>
+              <p>
+                Une fois qu'on quitte nano, on tape la commande " source ~/.bashrc"
+                pour charger le fichier ~/.bashrc sans avoir besoin de fermer et
+                rouvrir le terminal.
+              </p>
+              <img src="S1-B3_11.png" alt="S1-B3_11" width="550" height="400" >
+            </li>
+            <li>
+              <p>
+                Donc maintenant on est sûr que le prompt a été modifié d'après la première photo,
+                on peut même fermer et rouvrir le Terminal pour vérifier et confirmer
+                le changement comme dans la deuxième photo.
+              </p>
+              <img src="S1-B3_12.png" alt="S1-B3_1é" width="550" height="400" >
+              <img src="S1-B3_13.png" alt="S1-B3_13" width="550" height="400" >
+            </li>
+          </ol>
+      </section>
 
-        </p>
-        <img src="S1-B3_13.png" alt="S1-B3_13" width="550" height="400" >
-      </li>
-    </ol>
+      <section id="Semaine S1-B4">
+        <h2> Semaine S1-B4 </h2>
+        <h3>Les objectifs de cette semaine étaient :</h3>
+        <li>
+          Installation et configuration d’un service web (Apache, Nginx, …).
+        </li>
+        <li>
+          Configuration de WebStorm pour le déploiement.
+        </li>
+        <h3> Ce qu'on a fait </h3>
+      </section>
+    </main>
+  </body>
 
-  </section>
-
-  <section id="Semaine S1-B4">
-    <h2> Semaine S1-B4 </h2>
-    <h3>Les objectifs de cette semaine étaient :</h3>
-    <li>
-      Installation et configuration d’un service web (Apache, Nginx, …).
-    </li>
-
-    <li>
-      Configuration de WebStorm pour le déploiement.
-    </li>
-
-    <h3> Ce qu'on a fait </h3>
-  </section>
-</main>
-</body>
-
-<footer>
-  <p> Groupe 104 / TAYLAN & COMERT & SÖBE</p>
-</footer>
+  <footer>
+    <p> Groupe 104 / TAYLAN & COMERT & SÖBE</p>
+  </footer>
 
 </html>
